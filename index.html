@@ -8,19 +8,19 @@
    <script src="https://kit.fontawesome.com/fc1d9c3c59.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <header>
-      <section>
-         <div>
-            <button>
-               <span>
-                  <div></div>
-                  <div></div>
-                  <div></div>
+   <header class="header">
+      <section class="header__main-section">
+         <div class="header__utilities-container">
+            <button class="header__burger-menu-btn burger-menu-btn">
+               <span class="burger-menu-btn__icon">
+                  <div class="burger-menu-btn__top-line"></div>
+                  <div class="burger-menu-btn__middle-line"></div>
+                  <div class="burger-menu-btn__bottom-line"></div>
                </span>
                menu
             </button>
 
-            <!-- <nav id="burger-nav" class="burger-nav">
+            <!-- <nav id="burger-menu-nav" class="header__burger-menu-nav burger-menu-nav">
                <ul>
                   <li><a href=""></a></li>
                   <li><a href=""></a></li>
@@ -29,7 +29,13 @@
                </ul>
             </nav> -->
 
-            <button><i class="fas fa-search"></i></button>
+            <search class="header__search search">
+               <form class="search__form">
+                  <button class="search__btn">
+                     <img src="img/icons/search-icon.svg" alt="" class="search__icon">
+                  </button>
+               </form>
+            </search>
 
             <!-- <form action="">
                <input type="search" name="" id="">
@@ -37,15 +43,21 @@
             </form> -->
          </div>
 
-         <img src="img/svg/information-logo.svg" alt="">
+         <a href="index.html" class="header__logo-link">
+            <img src="img/svg/information-logo.svg" alt="" role="heading" aria-level="1" class="header__logo">
+         </a>
 
-         <a href="">log ind <i class="fas fa-user"></i></a>
+         <a href="#" class="header__log-in">
+            log ind
+            <img src="img/icons/user-icon.svg" alt="">
+         </a>
       </section>
-      <nav id="header__sub-nav" class="header__sub-nav">
-         <ul>
-            <li><a href="">nyhedsbreve</a></li>
-            <li><a href="">podcast</a></li>
-            <li><a href="">køb abonnement</a></li>
+      
+      <nav id="header__sub-nav" class="header__sub-nav sub-nav">
+         <ul class="sub-nav__list">
+            <li class="sub-nav__item"><a href="">nyhedsbreve</a></li>
+            <li class="sub-nav__item"><a href="">podcast</a></li>
+            <li class="sub-nav__item"><a href="">køb abonnement</a></li>
          </ul>
       </nav>
    </header>
@@ -53,14 +65,14 @@
    <main>
       <a href="">
          <figure>
-            <img src="" alt="">
+            <img src="https://placehold.co/930x180" alt="">
             <figcaption>annonce</figcaption>
          </figure>
       </a>
 
       <article>
           <p class="trumpet abonnement">læsetid: 7 min.</p>
-          <h1>Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det</h1>
+          <h2>Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det</h2>
           <p>Nogle EU-lande frygter, at Rusland kan bruge Nord Stream 2 som politisk våben mod Europa. Men i virkeligheden er det omvendt, mener firmaerne bag rørledningen: Det er EU, der bruger gassen som våben over for Putin. Information har været på charmetur med den russiske gas' europæiske venner</p>
 
           <figure class="span-all">
